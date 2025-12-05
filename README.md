@@ -69,7 +69,7 @@ By using this software, you agree that you:
 
 1. **Clone or navigate to the project directory:**
    ```bash
-   cd /Users/benbeckman/Documents/2g-attack-lab
+   cd /YourHost/here/2g-attack-lab
    ```
 
 2. **Create a virtual environment:**
@@ -140,9 +140,9 @@ After=network.target osmo-nitb.service
 [Service]
 Type=simple
 User=your-username
-WorkingDirectory=/Users/benbeckman/Documents/2g-attack-lab
-Environment="PATH=/Users/benbeckman/Documents/2g-attack-lab/venv/bin"
-ExecStart=/Users/benbeckman/Documents/2g-attack-lab/venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8000
+WorkingDirectory=/YourHost/Here/2g-attack-lab
+Environment="PATH=/YourHost/Here/2g-attack-lab/venv/bin"
+ExecStart=/YourHost/Here/2g-attack-lab/venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8000
 Restart=always
 
 [Install]
